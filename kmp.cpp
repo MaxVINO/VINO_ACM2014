@@ -13,7 +13,7 @@ void getnextval(char p[]){
         if(k == -1 || p[k] == p[j]){
             j++,k++;
             if(p[k] == p[j]){
-                next[j] = k;
+                next[j] = next[k];
                 continue;
             }
             next[j] = k;
